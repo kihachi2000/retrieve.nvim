@@ -45,7 +45,7 @@ local function jump_back()
     vim.api.nvim_set_current_win(winnum)
 end
 
-vim.keymap.set("n", "<Plug>retrieve-set-mark", set_mark, {noremap = true, silent = true})
-vim.keymap.set("n", "<Plug>retrieve-jump-back", jump_back, {noremap = true, silent = true})
+vim.keymap.set("n", "<Plug>retrieve-set-anchor", set_mark, {noremap = true, silent = false})
+vim.keymap.set("n", "<Plug>retrieve-return", jump_back, {noremap = true, silent = false})
 
 return
